@@ -1,0 +1,2216 @@
+Signature = XACT3;
+Version = 17;
+Content Version = 45;
+Release = March 2009;
+
+Options
+{
+    Verbose Report = 0;
+    Generate C/C++ Headers = 1;
+}
+
+Global Settings
+{
+    Xbox File = Xbox\sounds.xgs;
+    Windows File = Win\sounds.xgs;
+    Header File = sounds.h;
+    Exclude Category Names = 0;
+    Exclude Variable Names = 0;
+    Last Modified Low = 29991240;
+    Last Modified High = 3000700460;
+
+    Category
+    {
+        Name = Global;
+        Public = 1;
+        Background Music = 0;
+        Volume = 0;
+
+        Category Entry
+        {
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Category
+    {
+        Name = Default;
+        Public = 1;
+        Background Music = 0;
+        Volume = 0;
+
+        Category Entry
+        {
+            Name = Global;
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Category
+    {
+        Name = Music;
+        Public = 1;
+        Background Music = 1;
+        Volume = 0;
+
+        Category Entry
+        {
+            Name = Global;
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Category
+    {
+        Name = Effect;
+        Public = 1;
+        Background Music = 0;
+        Volume = 0;
+
+        Category Entry
+        {
+            Name = Global;
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Variable
+    {
+        Name = OrientationAngle;
+        Public = 1;
+        Global = 0;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 0;
+        Time = 0;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = -180.000000;
+        Max = 180.000000;
+    }
+
+    Variable
+    {
+        Name = DopplerPitchScalar;
+        Public = 1;
+        Global = 0;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 0;
+        Time = 0;
+        Value = 1.000000;
+        Initial Value = 1.000000;
+        Min = 0.000000;
+        Max = 4.000000;
+    }
+
+    Variable
+    {
+        Name = SpeedOfSound;
+        Public = 1;
+        Global = 1;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 0;
+        Time = 0;
+        Value = 343.500000;
+        Initial Value = 343.500000;
+        Min = 0.000000;
+        Max = 1000000.000000;
+    }
+
+    Variable
+    {
+        Name = ReleaseTime;
+        Public = 1;
+        Global = 0;
+        Internal = 1;
+        External = 1;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 1;
+        Time = 1;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = 0.000000;
+        Max = 15000.000000;
+    }
+
+    Variable
+    {
+        Name = AttackTime;
+        Public = 1;
+        Global = 0;
+        Internal = 1;
+        External = 1;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 1;
+        Time = 1;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = 0.000000;
+        Max = 15000.000000;
+    }
+
+    Variable
+    {
+        Name = NumCueInstances;
+        Public = 1;
+        Global = 0;
+        Internal = 1;
+        External = 1;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 1;
+        Time = 0;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = 0.000000;
+        Max = 1024.000000;
+    }
+
+    Variable
+    {
+        Name = Distance;
+        Public = 1;
+        Global = 0;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 0;
+        Time = 0;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = 0.000000;
+        Max = 1000.000000;
+    }
+
+    RPC
+    {
+        Name = Fade In/Out;
+
+        RPC Curve
+        {
+            Name = 1::74417ce1-4a14-44ff-93a5-b5fd6b93428d;
+            Property = 0;
+            Sound = 0;
+            Line Color = 4287200587;
+            Viewable = 1;
+
+            Variable Entry
+            {
+                Name = AttackTime;
+            }
+
+            RPC Point
+            {
+                X = 0.000000;
+                Y = -9600.000000;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 558.000000;
+                Y = -2500.000000;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 6000.000000;
+                Y = -2.083333;
+                Curve = 0;
+            }
+        }
+
+        RPC Curve
+        {
+            Name = 1::c63d70ea-c1a5-4158-a2b2-4a8d0f47b646;
+            Property = 0;
+            Sound = 0;
+            Line Color = 4286938874;
+            Viewable = 1;
+
+            Variable Entry
+            {
+                Name = ReleaseTime;
+            }
+
+            RPC Point
+            {
+                X = 148.000000;
+                Y = 0.000000;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 5024.000000;
+                Y = -2500.000000;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 6029.000000;
+                Y = -9600.000000;
+                Curve = 0;
+            }
+        }
+    }
+
+    RPC
+    {
+        Name = DistanceFade;
+
+        RPC Curve
+        {
+            Name = 1::ed7fd78d-aadd-4d4b-a489-f26400795081;
+            Property = 0;
+            Sound = 0;
+            Line Color = 4283649490;
+            Viewable = 1;
+
+            Variable Entry
+            {
+                Name = Distance;
+            }
+
+            RPC Point
+            {
+                X = 126.550865;
+                Y = 0.000000;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 997.518616;
+                Y = -745.833374;
+                Curve = 0;
+            }
+        }
+    }
+
+    RPC
+    {
+        Name = RPC Preset;
+
+        RPC Curve
+        {
+            Name = 1::50e751ca-7dd0-40e7-bb0c-42e3e94b4b27;
+            Property = 1;
+            Sound = 0;
+            Line Color = 4288911947;
+            Viewable = 1;
+
+            Variable Entry
+            {
+                Name = NumCueInstances;
+            }
+
+            RPC Point
+            {
+                X = 50.818859;
+                Y = 0.000000;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 682.666687;
+                Y = 0.000000;
+                Curve = 0;
+            }
+        }
+    }
+
+    Compression Preset
+    {
+        Name = XMA40;
+        Xbox Format Tag = 357;
+        Target Sample Rate = 48000;
+        XMA Quality = 40;
+        Find Best Quality = 0;
+        High Freq Cut = 0;
+        Loop = 0;
+        PC Format Tag = 2;
+        Samples Per Block = 128;
+    }
+}
+
+Wave Bank
+{
+    Name = waves1;
+    Xbox File = Xbox\waves1.xwb;
+    Windows File = Win\waves1.xwb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Seek Tables = 1;
+    Compression Preset Name = XMA40;
+    Xbox Bank Last Modified Low = 0;
+    Xbox Bank Last Modified High = 0;
+    PC Bank Last Modified Low = 0;
+    PC Bank Last Modified High = 0;
+    Header Last Modified Low = 0;
+    Header Last Modified High = 0;
+    Bank Last Revised Low = 259519762;
+    Bank Last Revised High = 29998853;
+
+    Wave
+    {
+        Name = epic;
+        File = music\epic.wav;
+        Build Settings Last Modified Low = 2354911088;
+        Build Settings Last Modified High = 29996672;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 16983792;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3346071104;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = sneak;
+        File = music\sneak.wav;
+        Build Settings Last Modified Low = 1275568792;
+        Build Settings Last Modified High = 29996673;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 13095936;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3350914854;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = alarm;
+        File = music\alarm.wav;
+        Build Settings Last Modified Low = 1276037542;
+        Build Settings Last Modified High = 29996673;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 9218044;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3312633604;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = aahhzz;
+        File = effects\aahhzz.wav;
+        Build Settings Last Modified Low = 184671266;
+        Build Settings Last Modified High = 29996679;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 217780;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2844039854;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = bang_1;
+        File = effects\bang_1.wav;
+        Build Settings Last Modified Low = 184827516;
+        Build Settings Last Modified High = 29996679;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 145920;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2844664854;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = bang_2;
+        File = effects\bang_2.wav;
+        Build Settings Last Modified Low = 184827516;
+        Build Settings Last Modified High = 29996679;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 141264;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2844821104;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = bang_3;
+        File = effects\bang_3.wav;
+        Build Settings Last Modified Low = 184983766;
+        Build Settings Last Modified High = 29996679;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 141264;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2844977354;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = fart-1;
+        File = effects\fart-1.wav;
+        Build Settings Last Modified Low = 184983766;
+        Build Settings Last Modified High = 29996679;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 74496;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2844977354;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = fart-2;
+        File = effects\fart-2.wav;
+        Build Settings Last Modified Low = 185140016;
+        Build Settings Last Modified High = 29996679;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 15174;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2845289854;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = fart-3;
+        File = effects\fart-3.wav;
+        Build Settings Last Modified Low = 185296266;
+        Build Settings Last Modified High = 29996679;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 35096;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2845446104;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = fart-4;
+        File = effects\fart-4.wav;
+        Build Settings Last Modified Low = 185608766;
+        Build Settings Last Modified High = 29996679;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 44160;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2845602354;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = firework-explosion-1;
+        File = effects\firework-explosion-1.wav;
+        Build Settings Last Modified Low = 185765016;
+        Build Settings Last Modified High = 29996679;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 715008;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2843883604;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = goddamnit;
+        File = effects\goddamnit.wav;
+        Build Settings Last Modified Low = 185921266;
+        Build Settings Last Modified High = 29996679;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 129492;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2844196104;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = gun-reload-1;
+        File = effects\gun-reload-1.wav;
+        Build Settings Last Modified Low = 186077516;
+        Build Settings Last Modified High = 29996679;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 112896;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2845133604;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = gunshot;
+        File = effects\gunshot.wav;
+        Build Settings Last Modified Low = 186390016;
+        Build Settings Last Modified High = 29996679;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 120394;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2844352354;
+            Last Modified High = 29998351;
+        }
+    }
+
+    Wave
+    {
+        Name = go_commando;
+        File = effects\go_commando.wav;
+        Build Settings Last Modified Low = 2400737058;
+        Build Settings Last Modified High = 29998852;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 837628;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2007924558;
+            Last Modified High = 29998852;
+        }
+    }
+
+    Wave
+    {
+        Name = menu;
+        File = music\menu.wav;
+        Build Settings Last Modified Low = 2697299558;
+        Build Settings Last Modified High = 29998852;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 8910844;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1907143308;
+            Last Modified High = 29998852;
+        }
+    }
+}
+
+Sound Bank
+{
+    Name = sounds1;
+    Xbox File = Xbox\sounds1.xsb;
+    Windows File = Win\sounds1.xsb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Header Last Modified High = 0;
+    Header Last Modified Low = 0;
+
+    Sound
+    {
+        Name = epic;
+        Volume = 0;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Fade In/Out;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = epic;
+                    Entry Index = 0;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = Fade In/Out;
+                RPC Curve Name = 1::74417ce1-4a14-44ff-93a5-b5fd6b93428d;
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = Fade In/Out;
+                RPC Curve Name = 1::c63d70ea-c1a5-4158-a2b2-4a8d0f47b646;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = sneak;
+        Volume = 0;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Fade In/Out;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = sneak;
+                    Entry Index = 1;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = Fade In/Out;
+                RPC Curve Name = 1::74417ce1-4a14-44ff-93a5-b5fd6b93428d;
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = Fade In/Out;
+                RPC Curve Name = 1::c63d70ea-c1a5-4158-a2b2-4a8d0f47b646;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = alarm;
+        Volume = 0;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Fade In/Out;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = alarm;
+                    Entry Index = 2;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = Fade In/Out;
+                RPC Curve Name = 1::74417ce1-4a14-44ff-93a5-b5fd6b93428d;
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = Fade In/Out;
+                RPC Curve Name = 1::c63d70ea-c1a5-4158-a2b2-4a8d0f47b646;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = aahhzz;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Effect;
+        }
+
+        RPC Entry
+        {
+            RPC Name = DistanceFade;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = aahhzz;
+                    Entry Index = 3;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = DistanceFade;
+                RPC Curve Name = 1::ed7fd78d-aadd-4d4b-a489-f26400795081;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = bang_1;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Effect;
+        }
+
+        RPC Entry
+        {
+            RPC Name = DistanceFade;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Pitch Variation
+                {
+                    Min = -962;
+                    Max = -421;
+                    Operator = 0;
+                    New Variation On Loop = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = bang_1;
+                    Entry Index = 4;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = DistanceFade;
+                RPC Curve Name = 1::ed7fd78d-aadd-4d4b-a489-f26400795081;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = bang_2;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Effect;
+        }
+
+        RPC Entry
+        {
+            RPC Name = DistanceFade;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Pitch Variation
+                {
+                    Min = -580;
+                    Max = -215;
+                    Operator = 0;
+                    New Variation On Loop = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = bang_2;
+                    Entry Index = 5;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = DistanceFade;
+                RPC Curve Name = 1::ed7fd78d-aadd-4d4b-a489-f26400795081;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = bang_3;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Effect;
+        }
+
+        RPC Entry
+        {
+            RPC Name = DistanceFade;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Pitch Variation
+                {
+                    Min = -612;
+                    Max = -215;
+                    Operator = 0;
+                    New Variation On Loop = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = bang_3;
+                    Entry Index = 6;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = DistanceFade;
+                RPC Curve Name = 1::ed7fd78d-aadd-4d4b-a489-f26400795081;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = fart-1;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Effect;
+        }
+
+        RPC Entry
+        {
+            RPC Name = DistanceFade;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = fart-1;
+                    Entry Index = 7;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = DistanceFade;
+                RPC Curve Name = 1::ed7fd78d-aadd-4d4b-a489-f26400795081;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = fart-2;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Effect;
+        }
+
+        RPC Entry
+        {
+            RPC Name = DistanceFade;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = fart-2;
+                    Entry Index = 8;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = DistanceFade;
+                RPC Curve Name = 1::ed7fd78d-aadd-4d4b-a489-f26400795081;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = fart-3;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Effect;
+        }
+
+        RPC Entry
+        {
+            RPC Name = DistanceFade;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = fart-3;
+                    Entry Index = 9;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = DistanceFade;
+                RPC Curve Name = 1::ed7fd78d-aadd-4d4b-a489-f26400795081;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = fart-4;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Effect;
+        }
+
+        RPC Entry
+        {
+            RPC Name = DistanceFade;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = fart-4;
+                    Entry Index = 10;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = DistanceFade;
+                RPC Curve Name = 1::ed7fd78d-aadd-4d4b-a489-f26400795081;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = firework-explosion-1;
+        Volume = 0;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Effect;
+        }
+
+        RPC Entry
+        {
+            RPC Name = DistanceFade;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Pitch Variation
+                {
+                    Min = -564;
+                    Max = 40;
+                    Operator = 0;
+                    New Variation On Loop = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = firework-explosion-1;
+                    Entry Index = 11;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = DistanceFade;
+                RPC Curve Name = 1::ed7fd78d-aadd-4d4b-a489-f26400795081;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = goddamnit;
+        Volume = 0;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Effect;
+        }
+
+        RPC Entry
+        {
+            RPC Name = DistanceFade;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Pitch Variation
+                {
+                    Min = -834;
+                    Max = 834;
+                    Operator = 0;
+                    New Variation On Loop = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = goddamnit;
+                    Entry Index = 12;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = DistanceFade;
+                RPC Curve Name = 1::ed7fd78d-aadd-4d4b-a489-f26400795081;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = gun-reload-1;
+        Volume = 0;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Effect;
+        }
+
+        RPC Entry
+        {
+            RPC Name = DistanceFade;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Pitch Variation
+                {
+                    Min = -100;
+                    Max = 100;
+                    Operator = 0;
+                    New Variation On Loop = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = gun-reload-1;
+                    Entry Index = 13;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = DistanceFade;
+                RPC Curve Name = 1::ed7fd78d-aadd-4d4b-a489-f26400795081;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = gunshot;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Effect;
+        }
+
+        RPC Entry
+        {
+            RPC Name = DistanceFade;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Pitch Variation
+                {
+                    Min = -100;
+                    Max = 100;
+                    Operator = 0;
+                    New Variation On Loop = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = gunshot;
+                    Entry Index = 14;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = DistanceFade;
+                RPC Curve Name = 1::ed7fd78d-aadd-4d4b-a489-f26400795081;
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = go_commando;
+        Volume = 0;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Effect;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = go_commando;
+                    Entry Index = 15;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = menu;
+        Volume = 0;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Fade In/Out;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaer Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = waves1;
+                    Bank Index = 0;
+                    Entry Name = menu;
+                    Entry Index = 16;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = Fade In/Out;
+                RPC Curve Name = 1::74417ce1-4a14-44ff-93a5-b5fd6b93428d;
+            }
+
+            RPC Curve Entry
+            {
+                RPC Name = Fade In/Out;
+                RPC Curve Name = 1::c63d70ea-c1a5-4158-a2b2-4a8d0f47b646;
+            }
+        }
+    }
+
+    Cue
+    {
+        Name = epic;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = epic;
+            Index = 0;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = sneak;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = sneak;
+            Index = 1;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = alarm;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = alarm;
+            Index = 2;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = aahhzz;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = aahhzz;
+            Index = 3;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = bang_1;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = bang_1;
+            Index = 4;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = bang_2;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = bang_2;
+            Index = 5;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = bang_3;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = bang_3;
+            Index = 6;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = fart-1;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = fart-1;
+            Index = 7;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = fart-2;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = fart-2;
+            Index = 8;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = fart-3;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = fart-3;
+            Index = 9;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = fart-4;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = fart-4;
+            Index = 10;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = firework-explosion-1;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = firework-explosion-1;
+            Index = 11;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = goddamnit;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = goddamnit;
+            Index = 12;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = gun-reload-1;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = gun-reload-1;
+            Index = 13;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = gunshot;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = gunshot;
+            Index = 14;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = go_commando;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = go_commando;
+            Index = 15;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = menu;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = menu;
+            Index = 16;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+}
