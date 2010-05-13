@@ -8,7 +8,7 @@ namespace QuestAdaptation
 {
     public class EngineStateGameplay : EngineAbstract
     {
-
+        private GameTexture mJared = new GameTexture(@"Sprites\sprite1");
         public EngineStateGameplay(Engine engine) : base(engine)
         {
             // Init logic here
@@ -25,6 +25,7 @@ namespace QuestAdaptation
 
         public override void draw()
         {
+
             //GameplayManager.Player.draw();
             //GameplayManager.ActiveArea.draw();
             //GameplayManager.drawHUD();
