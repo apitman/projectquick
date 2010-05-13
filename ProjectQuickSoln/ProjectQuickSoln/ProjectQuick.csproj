@@ -83,6 +83,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\Collidable.cs" />
+    <Compile Include="Interfaces\PhysicsObj.cs" />
+    <Compile Include="Interfaces\GameObj.cs" />
+    <Compile Include="Objects\Asteroid.cs" />
     <Compile Include="rendering\Camera.cs" />
     <Compile Include="collision\Collider.cs" />
     <Compile Include="collision\CollisionDetector.cs" />
